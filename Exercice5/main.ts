@@ -13,10 +13,10 @@ class ConcertTicket {
   public concertPlace: string;
   public artistName: string;
   public dateOfConcert: string;
-  public clientName: string = ""; //optionnel
+  public clientName: string = ""; //optionnal
   public placeNumber: number ;
 
-//Constructeur
+//Constructor
   constructor(concertPlace: string, artistName: string, dateOfConcert: string, placeNumber: number, clientName?: string) {
     this.concertPlace = concertPlace;
     this.artistName = artistName;
