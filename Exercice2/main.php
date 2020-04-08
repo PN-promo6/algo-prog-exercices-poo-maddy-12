@@ -21,7 +21,6 @@ class Furniture{
     $this->year=$year;
   }
 }
-
 //Display
 $wassily = new Furniture("Knoll"," Marcel Breue",1925);
 $wassily->year=1926;

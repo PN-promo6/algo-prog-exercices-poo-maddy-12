@@ -7,7 +7,7 @@
 //  Cette instance est un objet représentant la chaise Wassily,
 //  crée par Marcel Breuer en 1925, et dont les droits d’édition appartiennent actuellement à l’entreprise Knoll.
 
-
+//Class
 class Furniture {
   editor: string;
   designer: string;
