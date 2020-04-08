@@ -29,7 +29,6 @@ class ConcertTicket {
   }
 
 //Methode
-
   htmlDetails(): string {
     let htmlContent: string = `
     <p>Lieu du concert: ${this.concertPlace}</p>
