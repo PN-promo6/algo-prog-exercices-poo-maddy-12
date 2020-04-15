@@ -5,8 +5,8 @@ class Main {
     public static void main(String[]args) {
         Client madina = new Client("Madina", 1234567);
         ProfessionalClient noah = new ProfessionalClient("Noah", 987456, 7412589);
-        system.out.printIn(madina.name+" "+ madina.accountNumber);
-        system.out.printIn(noah.name+" "+ noah.accountNumber+" "+noah.siretNumber);
+         System.out.println(madina.name+" "+ madina.accountNumber);
+         System.out.println(noah.name+" "+ noah.accountNumber+" "+noah.siretNumber);
     }
 }
 
@@ -16,7 +16,7 @@ class Client {
     int accountNumber;
 
 //constructor
-    Client(String name, Int accountNumber){
+    Client(String name, int accountNumber){
         this.name = name;
         this.accountNumber = accountNumber;
     }
@@ -24,7 +24,7 @@ class Client {
 
 //Class
 class ProfessionalClient extends Client {
-    int siretNumber:
+    int siretNumber;
 
 //Constructor
 ProfessionalClient(String name, int accountNumber, int siretNumber){
