@@ -56,12 +56,14 @@ class Player {
         }
     }
 }
+//Declaration des variable avec les données des paramétres 
 let lara: Player = new Player("Lara Croft");
-let teleporter: Teleporter = new Teleporter('Téléporteur Ruby ', 200)
-lara.addItem(teleporter);
+let teleporterRuby: Teleporter = new Teleporter('Téléporteur Ruby ', 200)
+let teleporterSaphire: Teleporter = new Teleporter('Téléporteur Saphire ', 600)
+let teleporterEmerald: Teleporter = new Teleporter('Téléporteur Emerald ', 350)
 let weapon: Arrow = new Arrow("Whaev", 4);
-
-lara.addItem(teleporter);
-lara.addItem(teleporter);
-lara.addItem(teleporter);
+//Appel à la méthode
+lara.addItem(teleporterRuby);
+lara.addItem(teleporterSaphire);
+lara.addItem(teleporterEmerald);
 lara.addItem(weapon);
