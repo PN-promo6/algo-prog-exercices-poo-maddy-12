@@ -30,22 +30,22 @@ class Arrow extends Item {
 class Player {
     playerName: string;
     lifePoints: number;
-    inventorySizeUsed: number;
+    usedInvertorySize: number;
     items: Array<Item>;
 
     constructor(playerName: string) {
         this.lifePoints = 3;
         this.playerName = playerName;
-        this.inventorySizeUsed = 0;
+        this.usedInvertorySize = 0;
         this.items = new Array<Item>();
     }
 
     addItem(item: Item): boolean {
         // let canAdd: boolean = false;
-        if (this.inventorySizeUsed + item.size <= 9) {
+        if (this.usedInvertorySize + item.size <= 9) {
             this.items.push(item);
-            //this.inventorySizeUsed = this.inventorySizeUsed + item.size;
-            this.inventorySizeUsed += item.size
+            //this.usedInvertorySize = this.usedInvertorySize + item.size;
+            this.usedInvertorySize += item.size
             console.log("Bravo! vous avez obtenu un  " + item.name + "!");
 
             return true;
